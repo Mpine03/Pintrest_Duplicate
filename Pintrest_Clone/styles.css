@@ -229,7 +229,7 @@ header {
     justify-content: center;
     align-items: center;
   }
-
+  
 /* Responsive styles */
 @media (max-width: 1200px) {
     .header-left .nav .home-tab, .header-left .nav .create-tab {
@@ -247,7 +247,13 @@ header {
 
 @media (max-width: 768px) {
     .search-container {
-        display: none; 
+        display: flex;
+        flex-grow: 1; 
+        max-width: 100%;
+        margin: 0;
+    }
+    #search-bar {
+        padding: 8px 12px; 
     }
 
     .header-left .nav .home-tab, .header-left .nav .create-tab {
@@ -258,7 +264,33 @@ header {
     .icon {
         margin-left: 5px;
     }
+    .title {
+        font-size: 12px; 
+        padding: 5px 0; 
+    }
+
+    .profile-name {
+        font-size: 12px; 
+    }
+
+    .profile img {
+        width: 15px; 
+        height: 15px;
+    }
+
+    .save-button {
+        padding: 10px 15px; 
+        font-size: 12px; 
+    }
+
+    .icon-button {
+        font-size: 18px; 
+        width: 15px; 
+        height: 15px;
+    }
+
 }
+
 
 @media (max-width: 480px) {
     .header-left .nav .home-tab, .header-left .nav .create-tab {
@@ -274,6 +306,29 @@ header {
     .profile-icon {
         width: 24px;
         height: 24px;
+    }
+    .title {
+        font-size: 12px; 
+    }
+
+    .profile-name {
+        font-size: 10px; 
+    }
+
+    .profile img {
+        width: 20px; 
+        height: 20px;
+    }
+
+    .save-button {
+        padding: 8px 12px; 
+        font-size: 12px; 
+    }
+
+    .icon-button {
+        font-size: 16px; 
+        width: 20px; 
+        height: 20px;
     }
 }
 
